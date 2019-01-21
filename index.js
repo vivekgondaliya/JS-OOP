@@ -24,3 +24,7 @@ function Circle(radius) {
 
 const another = new Circle(1);
 another.draw();
+
+// Every object has a Constructor Property.
+//Ex: (let x = {}) == (let x = new Object())
+//More ex: new String(). new Boolean(), new Number()
