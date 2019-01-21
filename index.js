@@ -36,3 +36,12 @@ Circle.apply({}, [1, 2, 3]); // params passed in an array
 
 // Value types: Number, String, Boolean, Symbol, undefined, null
 // Reference types: Object, Function, Array
+
+/** Adding or Removing properties
+  - Adding: obj.prop = {} or obj[prop] = {}
+  - obj[] notation use cases:
+    - dynamically accesing the prop
+    - special characters or spaces in the propertyName
+
+  - Deleting: delete obj.prop or delete obj[prop]
+*/
