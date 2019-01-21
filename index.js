@@ -33,3 +33,6 @@ another.draw();
 //Line 25 = Line 34 and Line 35
 Circle.call({}, 1); // implicitly define params
 Circle.apply({}, [1, 2, 3]); // params passed in an array
+
+// Value types: Number, String, Boolean, Symbol, undefined, null
+// Reference types: Object, Function, Array
