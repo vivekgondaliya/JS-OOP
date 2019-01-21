@@ -27,4 +27,9 @@ another.draw();
 
 // Every object has a Constructor Property.
 //Ex: (let x = {}) == (let x = new Object())
-//More ex: new String(). new Boolean(), new Number()
+//More ex: new String(). new Boolean(), new Number(), new Function()
+
+//functions are Objects
+//Line 25 = Line 34 and Line 35
+Circle.call({}, 1); // implicitly define params
+Circle.apply({}, [1, 2, 3]); // params passed in an array
