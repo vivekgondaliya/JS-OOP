@@ -11,7 +11,7 @@ function createCircle(radius) {
 }
 
 const circle = createCircle(1);
-circle.draw();
+//circle.draw();
 
 //Constructor Function - First letter is Capital letter.
 //'this' and 'new' keywords are used.
@@ -23,7 +23,7 @@ function Circle(radius) {
 }
 
 const another = new Circle(1);
-another.draw();
+//another.draw();
 
 // Every object has a Constructor Property.
 //Ex: (let x = {}) == (let x = new Object())
@@ -45,3 +45,16 @@ Circle.apply({}, [1, 2, 3]); // params passed in an array
 
   - Deleting: delete obj.prop or delete obj[prop]
 */
+
+//Enumerating properties
+//look for desired prop type
+for (let key in another) {
+  if (typeof another[key] != "function") console.log(key, another[key]);
+}
+
+//list all the props
+const keys = Object.keys(another);
+console.log(keys);
+
+//check for a prop
+if ("radius" in another) console.log("Circle has a radius");
