@@ -11,6 +11,20 @@ function Circle(radius) {
     computeOptimumLocation();
     console.log("draw");
   };
+
+  //Issue: Would like to read and write defaultLocation
+  // Currently, it is a private prop so NO ACCESS
+  //Solution: Getters and Setters using defineProperty
+
+  Object.defineProperty(this, "defaultLocation", {
+    get: function() {
+      return defaultLocation;
+    },
+    set: function(value) {
+      if (!value.x || !value.y) throw new Error("Invalid location");
+      defaultLocation = value;
+    }
+  });
 }
 
 const circle = new Circle(1);
