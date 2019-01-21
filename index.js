@@ -1,12 +1,12 @@
 //Abstraction - Hide details and show the essentials. ex: DVD Player
 // Problem(s): everything is public, will create more problems in the future
 function Circle(radius) {
-  this.radius = radius;
-  this.defaultLocation = { x: 0, y: 0 };
-  this.computeOptimumLocation = function() {
+  let defaultLocation = { x: 0, y: 0 };
+  let computeOptimumLocation = function() {
     //...
   };
 
+  this.radius = radius;
   this.draw = function() {
     computeOptimumLocation();
     console.log("draw");
